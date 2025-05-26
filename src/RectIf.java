@@ -6,7 +6,7 @@ public class RectIf extends MyFrame{
 		int i;
 		for(i = 0;i<10; i++) {
 			
-			fillRect(x,x+50,10,100);	
+			fillRect(x,80,10,x+0);	
 			
 			x += 20;
 		}
