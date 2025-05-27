@@ -1,14 +1,23 @@
 
 public class RectIf extends MyFrame{
 	public void run(){
-		setColor(0,128,0);
 		int x = 30;
+		int y = 128;
+		
 		int i;
-		for(i = 0;i<10; i++) {
-			
-			fillRect(x,80,10,x+0);	
-			
+		for(i = 0;i<20; i++) {
+			if(i>10) {
+				setColor(0,y,0);
+				fillRect(x,80,10,100);	
+				
+				y -= 20;
+			}else {
+			setColor(0,y,0);
+			fillRect(x,80,10,100);	
+			y += 20;
+			}
 			x += 20;
+		    
 		}
 	}
 }
