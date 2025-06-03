@@ -7,9 +7,8 @@ public class Tree {
 		this.vy=vy;
 	}
 	public void draw(MyFrame frame) {
-		frame.fillOval(x, y, 50, 100);
-		frame.fillOval(x+100, y, 50,100);
-		frame.fillRect(x, y+160, 150, 10);
+		frame.fillOval(x, y, 50, 50);
+		frame.fillRect(x+20, y+20, 10, 100);
 	}
 	public void move() {
 		x+=vx;
