@@ -4,11 +4,11 @@ public class DisplayVehicleVector extends MyFrame{
 	public void run(){
 		Vector <Vehicle>  vehicles=new Vector <Vehicle>();
 		vehicles.add(new Car(10,30,3,0));
-		vehicles.add(new Car(10,100,-5,0));
-		vehicles.add(new Train(10,170,7,0));
+		vehicles.add(new Car(10,100,-7,0));
+		vehicles.add(new Train(10,170,9,0));
 		vehicles.add(new Train(10,230,-9,0));
-		vehicles.add(new Truck(10,290,7,0));
-		vehicles.add(new Truck(10,350,7,0));
+		vehicles.add(new Truck(10,290,5,0));
+		vehicles.add(new Truck(10,350,5,0));
 		
 		for(int i=0;i<500;i++) {
 			clear();
@@ -16,7 +16,7 @@ public class DisplayVehicleVector extends MyFrame{
 				vehicles.get(j).draw(this);
 				vehicles.get(j).move();
 			}
-			sleep(0.1);
+			sleep(0.03);
 		}	
 	}
 }
