@@ -7,14 +7,17 @@ public class Vehicle {
 		this.vx=vx;
 		this.vy=vy;
 	}
-	public void draw(MyFrame f) {
+	public void draw(MyFrame frame1) {
 		
 	}
 	public void move() {
 		x+=vx;
 		y+=vy;
-		if(x>450) {
-			x-=500;
+		if(x>300) {
+			x-=300;
+		}
+		else if (x<0){
+			x+=300;
 		}
 	}
 }

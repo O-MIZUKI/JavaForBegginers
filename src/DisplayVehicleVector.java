@@ -8,9 +8,9 @@ public class DisplayVehicleVector extends MyFrame{
 		vehicles.add(new Train(10,170,7,0));
 		vehicles.add(new Train(10,230,-9,0));
 		vehicles.add(new Truck(10,290,7,0));
-		vehicles.add(new Truck(10,350,-7,0));
+		vehicles.add(new Truck(10,350,7,0));
 		
-		for(int i=0;i<30;i++) {
+		for(int i=0;i<500;i++) {
 			clear();
 			for(int j=0;j<vehicles.size();j++) {
 				vehicles.get(j).draw(this);
